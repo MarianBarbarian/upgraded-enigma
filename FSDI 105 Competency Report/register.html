@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pet Salon</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=cyrillic,cyrillic-ext,latin-ext,vietnamese" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+</head>
+<body>
+
+	<header class="site-header in">
+		<div class="main-content">
+			<div class="bar">
+				
+
+				<nav class="navigation">
+					<a href="index.html">Home</a>
+					<a href="register.html">Register</a>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<main class="content">
+		<h1 class="fw-300 center-text">Pet Information</h1>
+		<form action="">
+			<fieldset>
+				<legend>Register your pet</legend><br><br>
+				<label>Pet Name:</label>
+                <input type="text" id="txtName" placeholder="Pet Name" required><br><br>
+                
+                <label>Pet Age:</label>
+                <input type="text" id="txtAge" placeholder="Pet Age" required><br><br>
+                
+                <label>Owner's Name:</label>
+				<input type="text" id="txtOwner" placeholder="Owner Name" required><br><br>
+
+				<label>Phone Number:</label>
+				<input type="text" id="txtPhone" placeholder="Phone number" required><br><br>
+
+
+			<label for="selServices">Service Type</label>
+			<select id="selServices">
+				<option value="" disabled selected>--- select ---</option>
+				<option value="Basic Bath">Basic Bath</option>
+				<option value="Deluxe Bath">Deluxe Bath</option>
+				<option value="Haircut & Bath">Haircut & Bath</option>
+				<option value="Question">Question</option>
+			</select>
+            <br>
+            
+            <button class="btn" onclick="registerPet();">Register</button>  <button class="btn" onclick="eraseBtn();">Clear Form</button>
+		</fieldset>
+		<br><br>
+			<input id="n" type="search" placeholder="Search"> <button class="btn1" onclick="petSearch();">Search</button>
+			<br>
+
+
+            <h1>Pet Services</h1>
+			<table id="table">
+				<tbody id="listBody">
+					<tr id='idname'><td>Pet Name  </td><td>Age  </td><td>Owner  </td><td>Phone Number  </td><td>Service Type  </td></tr>
+				</tbody>
+			</table>
+			<ul id="petList"></ul>
+	</main>
+
+<br><br><br><br><br><br>
+		<footer class="site-footer sect">
+			<div class="content content-footer">
+				<nav class="navigation">
+					<a href="index.html">Home</a>
+					<a href="register.html">Refresh</a>
+				</nav>
+				<p class="copyright"> All rights reserved &copy; </p>
+            </div>
+        </footer>
+	</form>
+
+        <script src="script.js"></script>
+</body>
+</html>
